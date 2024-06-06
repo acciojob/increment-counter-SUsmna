@@ -3,19 +3,12 @@
 // function increment(){
 // 	alert("un-incremented value.");
 // 	count++;
-// 	document.getElementById('counter').innerText = count;
+// 	document.getElementById('counter').innerHTML = count;
 // }
 
 document.getElementById('incrementBtn').addEventListener('click', function() {
-    // Get the current counter value from the paragraph element
-    let counterValue = parseInt(document.getElementById('counter').innerText);
-    
-    // Display an alert with the current counter value
+    let counterValue = parseInt(document.getElementById('counter').innerHTML);
     alert("un-incremented value. " + counterValue);
-    
-    // Increment the counter value
     counterValue++;
-    
-    // Update the counter paragraph with the new value
-    document.getElementById('counter').innerText = counterValue;
+    document.getElementById('counter').innerHTML = counterValue;
 });

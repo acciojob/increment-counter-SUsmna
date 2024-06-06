@@ -11,7 +11,7 @@ document.getElementById('incrementBtn').addEventListener('click', function() {
     let counterValue = parseInt(document.getElementById('counter').innerText);
     
     // Display an alert with the current counter value
-    alert("Current counter value: " + counterValue);
+    alert("un-incremented value. " + counterValue);
     
     // Increment the counter value
     counterValue++;
